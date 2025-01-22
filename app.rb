@@ -18,8 +18,8 @@ get("/") do
 end
 
 get ("/rock")do
-  @our_move - "rock"
-  moves = ["rock", "paper", scissors]
+  @our_move = "rock"
+  moves = ["rock", "paper", "scissors"]
 
   @comp_move = moves.sample
 
@@ -75,5 +75,5 @@ get ("/paper") do
   end
 
   erb(:play)
-
 end
+  
